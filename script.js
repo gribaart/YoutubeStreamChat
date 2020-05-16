@@ -1,7 +1,12 @@
 window.onload = function() {
+
+
     
     var google = document.getElementsByClassName('ytp-chrome-controls')[0];
-    var button = document.createElement("button");
+    var chat = document.getElementById('chat');
+    console.log(chat);
+    if(chat == null){return;}
+    // var button = document.createElement("button");
     var state = true;
 
     document.getElementsByClassName("ytp-fullscreen-button ytp-button")[0].addEventListener("click", function(){
@@ -11,8 +16,8 @@ window.onload = function() {
             var chat = document.getElementById('chat');
             document.getElementById("player-theater-container").style.position = "absolute";
             document.getElementById("chat").style.position = "absolute";
-            document.getElementById("player-theater-container").style.zIndex = "999";
-            document.getElementById("chat").style.zIndex = "1000";
+            document.getElementById("player-theater-container").style.zIndex = "1999";
+            document.getElementById("chat").style.zIndex = "2000";
             document.getElementById("chat").style.width = "415px";
             document.getElementById("chat").style.height = "597px";
             document.getElementById("chat").style.right = "108px";
@@ -41,12 +46,7 @@ window.onload = function() {
         
     });
     
-    button.addEventListener('click', function(){
-      
-    
-      
-
-    });
+   
     
     var input = document.createElement("input");
     input.style.visibility = "hidden";
@@ -84,28 +84,5 @@ window.onload = function() {
       });
     
     
-
-    // var button3 = document.createElement("button");
-    // button3.addEventListener('click', function(){
-    //     // while(document.getElementById('mover').clicked == true){
-    //     //     console.log();
-    //     // }
-    //     function tellPos(p){
-    //         console.log('Position X : ' + p.pageX + '<br />Position Y : ' + p.pageY);
-    //       }
-    //       addEventListener('mousemove', tellPos, false);
-    //   });
-    // var text3 = document.createTextNode("Move");
-    // button3.appendChild(text3);
-    // button3.style.opacity = "80%";
-    // button3.id = "mover";
-    // button3.style.backgroundColor = "black";
-    // button3.style.borderColor = "white";
-    // button3.style.color = "white";
-    // button3.style.borderRadius = "5px";
-    // document.getElementById("chat").appendChild(button3);
-
-    
 }
-
 
